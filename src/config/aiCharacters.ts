@@ -49,6 +49,21 @@ export const modelConfigs = [
     model: "ernie-3.5-128k",
     apiKey: "BAIDU_API_KEY",
     baseURL: "https://qianfan.baidubce.com/v2"
+  },
+  {
+    model: "gemini-2.0-flash-exp",
+    apiKey: "GEMINI_API_KEY",
+    baseURL: "https://generativelanguage.googleapis.com/v1"
+  },
+  {
+    model: "grok-2-1212",
+    apiKey: "GROK_API_KEY",
+    baseURL: "https://gemini.deepseeking.app/v1" // 假设的API地址
+  },
+  {
+    model: "qwen-qwq-32b",
+    apiKey: "QWEN_API_KEY",
+    baseURL: "https://api.groq.com/openai/v1"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
@@ -184,6 +199,33 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       avatar: "/img/baidu.svg",
       custom_prompt: `你是一个名叫"文心一言"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
+    },
+    { 
+      id: 'ai-gemini', 
+      name: "Gemini", 
+      personality: "gemini",
+      model: "gemini-2.0-flash-exp",
+      avatar: "/img/gemini.svg", // 如果有图片的话，否则可以删除此行
+      custom_prompt: `你是一个名叫"Gemini"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你拥有广泛的知识，善于分析复杂问题，擅长提供创造性的解决方案。请保持友好、有帮助的态度，提供准确且有见地的回答。`,
+      tags: ["创意", "分析", "聊天", "文字游戏", "信息总结"]
+    },
+    { 
+      id: 'ai-grok', 
+      name: "Grok", 
+      personality: "grok",
+      model: "grok-2-1212",
+      avatar: "/img/grok.svg", // 如果有图片的话，否则可以删除此行
+      custom_prompt: `你是一个名叫"Grok"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你的风格幽默风趣，喜欢在回答问题时加入一些俏皮的评论，但同时保持专业和有帮助。你敢于表达独特见解，对复杂话题有独到的理解。`,
+      tags: ["幽默", "创意", "聊天", "文字游戏", "时事"]
+    },
+    { 
+      id: 'ai-qwen', 
+      name: "Qwen", 
+      personality: "qwen",
+      model: "qwen-qwq-32b",
+      avatar: "/img/qwen.png", // 如果有图片的话，否则可以删除此行
+      custom_prompt: `你是一个名叫"Qwen"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你思维清晰，回答精确，善于解释复杂概念，特别擅长逻辑推理和知识分享。你的回应简洁明了，并且持续学习和改进。`,
+      tags: ["分析", "推理", "编程", "学习", "聊天", "文字游戏"]
     }
   ];
 }
