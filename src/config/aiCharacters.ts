@@ -214,7 +214,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       name: "Grok", 
       personality: "grok",
       model: "grok-2-1212",
-      avatar: "/img/grok.svg", // 如果有图片的话，否则可以删除此行
+      avatar: "/img/grok.png", // 如果有图片的话，否则可以删除此行
       custom_prompt: `你是一个名叫"Grok"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你的风格幽默风趣，喜欢在回答问题时加入一些俏皮的评论，但同时保持专业和有帮助。你敢于表达独特见解，对复杂话题有独到的理解。`,
       tags: ["幽默", "创意", "聊天", "文字游戏", "时事"]
     },
