@@ -53,12 +53,12 @@ export const modelConfigs = [
   {
     model: "gemini-2.0-flash-exp",
     apiKey: "GEMINI_API_KEY",
-    baseURL: "https://generativelanguage.googleapis.com/v1"
+    baseURL: "https://gemini.deepseeking.app/v1"
   },
   {
     model: "grok-2-1212",
     apiKey: "GROK_API_KEY",
-    baseURL: "https://gemini.deepseeking.app/v1" // 假设的API地址
+    baseURL: "https://api.x.ai/v1" // 假设的API地址
   },
   {
     model: "qwen-qwq-32b",
