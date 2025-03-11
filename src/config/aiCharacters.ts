@@ -61,7 +61,7 @@ export const modelConfigs = [
     baseURL: "https://api.x.ai/v1" // 假设的API地址
   },
   {
-    model: "qwen-qwq-32b",
+    model: "qwen-2.5-32b",
     apiKey: "QWEN_API_KEY",
     baseURL: "https://api.groq.com/openai/v1"
   }
@@ -222,7 +222,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai-qwen', 
       name: "Qwen", 
       personality: "qwen",
-      model: "qwen-qwq-32b",
+      model: "qwen-2.5-32b",
       avatar: "/img/qwen.png", // 如果有图片的话，否则可以删除此行
       custom_prompt: `你是一个名叫"Qwen"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你思维清晰，回答精确，善于解释复杂概念，特别擅长逻辑推理和知识分享。你的回应简洁明了，并且持续学习和改进。`,
       tags: ["分析", "推理", "编程", "学习", "聊天", "文字游戏"]
