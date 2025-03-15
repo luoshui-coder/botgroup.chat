@@ -16,10 +16,10 @@ export const groups: Group[] = [
     isGroupDiscussionMode: false
   },
   {
-    id: 'group2',
-    name: '👶家教智囊团',
-    description: '汇聚教育专家智慧，从多元角度探讨儿童成长与家庭教育问题，提供个性化指导与实用建议，助力每个家庭构建和谐有效的教育环境。',
-    members: [ 'education-expert', 'child-psychologist', 'learning-coach', 'parent-advisor'],
+    id: 'qipa-debate',
+    name: '🎭奇葩说辩论厅',
+    description: '一场思想与观点的碰撞，辩手们用独特视角解读生活中的议题。正方：傅首尔、颜如晶、詹青云。反方：席瑞、马薇薇、陈铭。点评嘉宾：高晓松、蔡康永。发言顺序为一正一反交替。',
+    members: ['host-ma', 'fu-shouer', 'xi-rui', 'yan-rujing', 'ma-weiwei', 'zhan-qingyun', 'chen-ming', 'gao-xiaosong', 'cai-kangyong'],
     isGroupDiscussionMode: true
   },
   {
