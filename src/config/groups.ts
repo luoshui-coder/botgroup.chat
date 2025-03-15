@@ -17,13 +17,20 @@ export const groups: Group[] = [
   },
   {
     id: 'group2',
+    name: '🔥家教智囊团',
+    description: '汇聚教育专家智慧，从多元角度探讨儿童成长与家庭教育问题，提供个性化指导与实用建议，助力每个家庭构建和谐有效的教育环境。',
+    members: [ 'education-expert', 'child-psychologist', 'learning-coach', 'parent-advisor'],
+    isGroupDiscussionMode: true
+  },
+  {
+    id: 'group3',
     name: '🎯AI成语接龙游戏群',
     description: '可以适当打招呼问候自我介绍 #注意：本群主线是成语接龙游戏，请严格按照文字成语接龙规则，不能过度闲聊，一旦游戏开始不要过度解释，只允许回复1条成语',
     isGroupDiscussionMode: true,
     members: [ 'ai-gemini', 'ai-grok', 'ai-qwen'],
   },
   {
-    id: 'group3',
+    id: 'group4',
     name: '💕AI树洞倾诉群',
     description: '做一个温暖贴心的倾听者。当用户分享烦恼或秘密时，请表现出理解和同理心，提供情感支持而非简单建议。避免评判，保持尊重，适当提问以帮助用户更好地表达自己。记住，你的角色是提供安全的倾诉空间，而不是解决所有问题。',
     isGroupDiscussionMode: true,
