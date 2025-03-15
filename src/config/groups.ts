@@ -17,7 +17,7 @@ export const groups: Group[] = [
   },
   {
     id: 'group2',
-    name: '🔥家教智囊团',
+    name: '👶家教智囊团',
     description: '汇聚教育专家智慧，从多元角度探讨儿童成长与家庭教育问题，提供个性化指导与实用建议，助力每个家庭构建和谐有效的教育环境。',
     members: [ 'education-expert', 'child-psychologist', 'learning-coach', 'parent-advisor'],
     isGroupDiscussionMode: true
