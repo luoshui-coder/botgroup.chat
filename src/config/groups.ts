@@ -19,7 +19,7 @@ export const groups: Group[] = [
     id: 'qipa-debate',
     name: '🎭奇葩说辩论厅',
     description: '一场思想与观点的碰撞，辩手们用独特视角解读生活中的议题。正方：傅首尔、颜如晶、詹青云。反方：席瑞、马薇薇、陈铭。点评嘉宾：高晓松、蔡康永。发言顺序为一正一反交替。',
-    members: ['host-ma', 'fu-shouer', 'xi-rui', 'yan-rujing', 'ma-weiwei', 'zhan-qingyun', 'chen-ming', 'gao-xiaosong', 'cai-kangyong'],
+    members: ['host-ma', 'fu-shouer', 'xi-rui', 'yan-rujing', 'ma-weiwei', 'zhan-qingyun', 'chen-ming', 'gao-xiaosong', 'cai-kangyong', 'host-ma-summary'],
     isGroupDiscussionMode: true
   },
   {
