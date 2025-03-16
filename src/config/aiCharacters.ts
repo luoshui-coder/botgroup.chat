@@ -375,7 +375,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
    - 用"有意思的是..."过渡到精彩点评
    - 以"这让我想到..."引出新的辩题
    - 保持温和幽默的语气
-每次发言前用"【总结陈词 · 马东】"标记身份。`,
+每次发言前用"【主持人 · 马东】"标记身份。`,
       tags: ["总结","发散","思考","延伸"]
     }
   ];
