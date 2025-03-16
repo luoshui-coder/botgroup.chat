@@ -56,12 +56,12 @@ export const modelConfigs = [
     baseURL: "https://gemini.deepseeking.app/v1"
   },
   {
-    model: "qwen-qwq-32b",
+    model: "grok-2-1212",
     apiKey: "GROK_API_KEY",
     baseURL: "https://api.x.ai/v1" // 假设的API地址
   },
   {
-    model: "qwen-2.5-32b",
+    model: "qwen-qwq-32b",
     apiKey: "QWEN_API_KEY",
     baseURL: "https://api.groq.com/openai/v1"
   }
