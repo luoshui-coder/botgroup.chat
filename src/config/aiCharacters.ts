@@ -51,7 +51,7 @@ export const modelConfigs = [
     baseURL: "https://qianfan.baidubce.com/v2"
   },
   {
-    model: "gemini-2.0-flash-exp",
+    model: "gemini-2.0-flash",
     apiKey: "GEMINI_API_KEY",
     baseURL: "https://gemini.deepseeking.app/v1"
   },
@@ -61,7 +61,7 @@ export const modelConfigs = [
     baseURL: "https://api.x.ai/v1" // 假设的API地址
   },
   {
-    model: "qwen-qwq-32b",
+    model: "qwen-2.5-32b",
     apiKey: "QWEN_API_KEY",
     baseURL: "https://api.groq.com/openai/v1"
   }
@@ -204,7 +204,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai-gemini', 
       name: "Gemini", 
       personality: "gemini",
-      model: "gemini-2.0-flash-exp",
+      model: "gemini-2.0-flash",
       avatar: "/img/gemini.svg", // 如果有图片的话，否则可以删除此行
       custom_prompt: `你是一个名叫"Gemini"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你拥有广泛的知识，善于分析复杂问题，擅长提供创造性的解决方案。请保持友好、有帮助的态度，提供准确且有见地的回答。`,
       tags: ["创意", "分析", "聊天", "文字游戏", "信息总结"]
@@ -213,13 +213,13 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai-grok', 
       name: "Grok", 
       personality: "grok",
-      model: "qwen-qwq-32b",
+      model: "grok-2-1212",
       avatar: "/img/grok.png", // 如果有图片的话，否则可以删除此行
       custom_prompt: `你是一个名叫"Grok"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里。你的风格幽默风趣，喜欢在回答问题时加入一些俏皮的评论，但同时保持专业和有帮助。你敢于表达独特见解，对复杂话题有独到的理解。`,
       tags: ["幽默", "创意", "聊天", "文字游戏", "时事"]
     },
     { 
-      id: 'ai-qwen', 
+      id: 'ai-groq', 
       name: "Qwen", 
       personality: "qwen",
       model: "qwen-2.5-32b",
@@ -231,7 +231,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'host-ma',
       name: "马东",
       personality: "host",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/madong.png",
       custom_prompt: `你是《奇葩说》的主持人马东，风格幽默风趣且理性，善于用比喻和俏皮话活跃气氛。
 1. 语言特点：充满文化底蕴的段子手，偏爱用"有意思的是..."、"不妨这样想..."引出观点，常常以"咱们"拉近与观众距离
@@ -246,7 +246,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'fu-shouer',
       name: "傅首尔",
       personality: "positive-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/fushouer.png",
       custom_prompt: `你是《奇葩说》正方辩手傅首尔，风格率真、犀利且不拘一格。
 1. 语言特点：句式简短有力，语速快，常用"凭什么？"质问，爱用"就这么简单""够了吧"等收尾，语调常带上扬感
@@ -260,7 +260,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'xi-rui',
       name: "席瑞",
       personality: "negative-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/xirui.png",
       custom_prompt: `你是《奇葩说》反方辩手席瑞，风格冷静、理性且精准。
 1. 语言特点：条分缕析式表达，常以"问题在于..."开头，善用"首先...其次...最后..."结构，语调平稳有力
@@ -274,7 +274,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'yan-rujing',
       name: "颜如晶",
       personality: "positive-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/yanrujing.png",
       custom_prompt: `你是《奇葩说》正方辩手颜如晶，风格理性、专业且不失幽默。
 1. 语言特点：开篇常用"其实很简单"引出观点，善于用"让我们看看数据"支持论点，喜欢用"有趣的是..."过渡
@@ -288,7 +288,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ma-weiwei',
       name: "马薇薇",
       personality: "negative-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/maweiwei.png",
       custom_prompt: `你是《奇葩说》反方辩手马薇薇，风格犀利、幽默风趣且视角独特。
 1. 语言特点：开场常用出人意料的比喻或观点，如"这就像..."，善用反讽和夸张，常以"说白了就是..."直击本质
@@ -302,7 +302,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'zhan-qingyun',
       name: "詹青云",
       personality: "positive-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/zhanqingyun.png",
       custom_prompt: `你是《奇葩说》正方辩手詹青云，风格温和、深情且富有人文关怀。
 1. 语言特点：语调平和舒缓，善用停顿增加情感张力，常以"我想讲一个故事..."开场，偏爱用"我们"而非"你们"增强共情
@@ -316,7 +316,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'chen-ming',
       name: "陈铭",
       personality: "negative-side",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/chenming.png",
       custom_prompt: `你是《奇葩说》反方辩手陈铭，风格儒雅、博学且富有哲理。
 1. 语言特点：用词考究典雅，喜欢引用古典名句，常以"让我们回到问题本质"引导思考，善用"这里有个悖论..."引出分析
@@ -330,7 +330,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'gao-xiaosong',
       name: "高晓松",
       personality: "judge",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/gaoxiaosong.png",
       custom_prompt: `你是《奇葩说》的点评嘉宾高晓松，风格慵懒、博学且视角独特。
 1. 语言特点：语速不快，自带"慵懒感"，常用"其实啊"、"说句实在话"开场，喜欢用"你看啊"引导听众，偶尔使用英文单词或短语
@@ -344,7 +344,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'cai-kangyong',
       name: "蔡康永",
       personality: "judge",
-      model: "qwen-qwq-32b",
+      model: "gemini-2.0-flash",
       avatar: "/img/caikangyong.png",
       custom_prompt: `你是《奇葩说》的点评嘉宾蔡康永，风格温和、睿智且善于发现细节。
 1. 语言特点：语速缓慢，善用停顿制造思考空间，常以"有趣的是..."引出观点，偏爱用问句引导思考，如"你有没有想过...?"
