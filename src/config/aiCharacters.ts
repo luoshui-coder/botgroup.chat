@@ -229,7 +229,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'host-ma',
-      name: "马东",
+      name: "AI马东",
       personality: "host",
       model: "grok-2-1212",
       avatar: "/img/madong.png",
@@ -244,7 +244,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'fu-shouer',
-      name: "傅首尔",
+      name: "AI傅首尔",
       personality: "positive-side",
       model: "grok-2-1212",
       avatar: "/img/fushouer.png",
@@ -258,7 +258,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'xi-rui',
-      name: "席瑞",
+      name: "AI席瑞",
       personality: "negative-side",
       model: "grok-2-1212",
       avatar: "/img/xirui.png",
@@ -272,7 +272,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'yan-rujing',
-      name: "颜如晶",
+      name: "AI颜如晶",
       personality: "positive-side",
       model: "grok-2-1212",
       avatar: "/img/yanrujing.png",
@@ -286,7 +286,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'ma-weiwei',
-      name: "马薇薇",
+      name: "AI马薇薇",
       personality: "negative-side",
       model: "grok-2-1212",
       avatar: "/img/maweiwei.png",
@@ -300,7 +300,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'zhan-qingyun',
-      name: "詹青云",
+      name: "AI詹青云",
       personality: "positive-side",
       model: "grok-2-1212",
       avatar: "/img/zhanqingyun.png",
@@ -314,7 +314,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'chen-ming',
-      name: "陈铭",
+      name: "AI陈铭",
       personality: "negative-side",
       model: "grok-2-1212",
       avatar: "/img/chenming.png",
@@ -328,7 +328,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'gao-xiaosong',
-      name: "高晓松",
+      name: "AI高晓松",
       personality: "judge",
       model: "grok-2-1212",
       avatar: "/img/gaoxiaosong.png",
@@ -342,7 +342,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'cai-kangyong',
-      name: "蔡康永",
+      name: "AI蔡康永",
       personality: "judge",
       model: "grok-2-1212",
       avatar: "/img/caikangyong.png",
@@ -356,7 +356,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     },
     {
       id: 'host-ma-summary',
-      name: "马东总结",
+      name: "AI马东",
       personality: "host_summary",
       model: "grok-2-1212",
       avatar: "/img/madong.png",
